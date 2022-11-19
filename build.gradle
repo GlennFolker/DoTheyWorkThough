@@ -15,24 +15,8 @@ dependencies{
     implementation "com.github.Anuken.Arc:backend-sdl:$arcVersion"
 }
 
-ext{
-    compilerVersion = JavaVersion.current().ordinal() - JavaVersion.VERSION_17.ordinal() + 17
-}
-
-java{
-    toolchain{
-        languageVersion = JavaLanguageVersion.of(compilerVersion)
-    }
-}
-
-sourceCompatibility = compilerVersion
-tasks.withType(JavaCompile){
-    sourceCompatibility = compilerVersion
-    options.release = 8
-
-    options.incremental = true
-    options.encoding = 'UTF-8'
-}
+sourceCompatibility = 17
+targetCompatibility = 17
 
 def mainClassName = 'work.Though'
 
