@@ -26,7 +26,6 @@ jobs:
           run: |
             mkdir out
             cd out
-
             java -jar ../build/libs/DoTheyWorkThough.jar
 
       - name: Upload results
