@@ -30,7 +30,7 @@ jobs:
             java -jar ../build/libs/DoTheyWorkThough.jar
 
       - name: Upload results
-      - uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v3
         with:
           name: Results
           path: out/*
