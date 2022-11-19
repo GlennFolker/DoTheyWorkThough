@@ -12,4 +12,4 @@ build/
 .kateproject
 
 # Project-specific.
-core/assets/sprites/
+out/

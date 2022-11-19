@@ -5,6 +5,3 @@ if(JavaVersion.current().ordinal() < JavaVersion.VERSION_17.ordinal()){
         "If this error still persists, double-check if you have Java 17 installed, and your PATH variable points to the correct installation."
     )
 }
-
-include ':core'
-include ':desktop'
