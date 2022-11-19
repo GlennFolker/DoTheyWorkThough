@@ -15,18 +15,12 @@ jobs:
           java-version: 17
           distribution: temurin
 
-      - name: Build the project
-        run: |
-          chmod +x gradlew
-          ./gradlew dist --no-daemon --info --stacktrace
-
       - name: Run the project with Xvfb
         uses: GabrielBB/xvfb-action@v1
         with:
           run: |
-            mkdir out
-            cd out
-            java -jar ../build/libs/DoTheyWorkThough.jar
+            chmod +x gradlew
+            ./gradlew run --no-daemon --info --stacktrace
 
       - name: Upload results
         uses: actions/upload-artifact@v3
