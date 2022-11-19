@@ -24,7 +24,6 @@ public class Though extends ApplicationCore{
             }});
         }catch(Throwable err){
             Log.err(Strings.neatError(Strings.getFinalCause(err)));
-            SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_ERROR, "Crash!", Strings.getFinalMessage(err));
         }
     }
 

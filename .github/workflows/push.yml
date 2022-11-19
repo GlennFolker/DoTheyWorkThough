@@ -3,7 +3,7 @@ name: Java CI
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
-  buildJar:
+  lets-see:
     runs-on: ubuntu-22.04
 
     steps:
